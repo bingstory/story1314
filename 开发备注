@@ -1,0 +1,31 @@
+
+
+放Common/function.php的直接调用的公共方法
+★
+★
+★
+★
+★
+★
+★
+★
+★
+★
+★
+
+Controller/Public 公用方法
+★验证码 验证   verify
+★
+★
+★
+★
+★
+★
+★
+★
+★
+★
+★
+
+
+MessageController和message表  是用来  做  ajax测试的   目前未成功

@@ -1,0 +1,69 @@
+*{
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+input,img{
+	border: none;
+}
+input{
+	border: 1px solid #C7C7C5; 
+	height: 25px;
+}
+#wrapper{
+	border: 1px solid #000;
+	width: 100%;
+}
+/*左侧区域*/
+#wrapper .left{
+	border: 1px solid blue;
+	width: 500px;
+	float: left;
+}
+#wrapper .left .title{
+	height: 40px;
+	line-height: 30px;
+}
+#wrapper .left .title input{
+	width: 400px;
+}
+#wrapper .left .submit{
+	text-align: center;
+}
+#wrapper .left .submit input{
+	width: 100px;
+	height: 30px;
+	border-radius: 3px;
+	margin-top: 5px;
+}
+/*左侧区域 END*/
+/*右侧区域*/
+#wrapper .right{
+	border: 1px solid blue; 
+	float: left; 
+}
+#wrapper .right .article-list{
+	border: 1px solid blue; 
+}
+#wrapper .right li.article{
+	border-bottom: 1px dashed gray; 
+	height: 30px;
+	line-height: 30px;
+}
+/*右侧区域 END*/
+
+#wrapper .clear{
+	clear: both;
+}
+#wrapper .leftclear{
+	clear: left;
+}
+#wrapper .rightclear{
+	clear: right;
+}
