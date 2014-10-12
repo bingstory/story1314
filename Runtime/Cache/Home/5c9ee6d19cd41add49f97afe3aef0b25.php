@@ -56,13 +56,13 @@
             <a href="#"></a>
           </li>
           <li>
-            <a href="" class="nav navbar-nav">登录/注册</a>
+            <!-- <a href="" class="nav navbar-nav">登录/注册</a> -->
           </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="" style="color:#FFF;">让历史记住我们的家庭！</a>
+            <?php echo ($logininfo); ?>
           </li>
         </ul>
       </div>
@@ -97,7 +97,7 @@
       </div>
         <div id="myTabContent" class="tab-content">
           <div class="tab-pane fade in active" id="login">
-            <form role="form">
+            <form role="form" action="<?php echo U(MODULE_NAME.'/User/doLogin');?>">
             <div class="row">
               <div class="form-group"> <input name="email" type="email" class="form-control" id="" placeholder="邮箱"></div>
 
@@ -116,7 +116,7 @@
           <div class="tab-pane fade" id="register">
             <form role="form" method="post" action="<?php echo U(MODULE_NAME.'/User/doRegister');?>">
             <div class="row">
-              <div class="form-group"> <input name="eamil" type="email" class="form-control" id="" placeholder="邮箱"></div>
+              <div class="form-group"> <input name="email" type="email" class="form-control" id="" placeholder="邮箱"></div>
 
               <div class="form-group"><input name="password" type="password" class="form-control" id="" placeholder="密码"></div>
 
