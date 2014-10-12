@@ -1,18 +1,25 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
   <title>首页</title>
-  <link href="/s/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="/s/Public/Home/css/style.css" rel="stylesheet">
-  <script type="text/javascript" src="/s/Public/static/jquery-1.9.1.min.js"></script>
-  <script src="/s/Public/static/bootstrap/js/bootstrap.min.js"></script>
-
+  <script src="/story1314/Public/static/refreshcode.js"></script>
+  <script>
+  var URL = <?php echo U(MODULE_NAME.'/Public/verify','','');?>;
+  </script>
+  
+	<link href="/story1314/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/story1314/Public/Home/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="/story1314/Public/static/jquery-1.9.1.min.js"></script>
+    <script src="/story1314/Public/static/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <!-- 导航START -->
+<body> 
+    <!-- 头部 -->
+	 <!-- 导航START -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
-    <div class="container-fluid">
+    <div class="container">
       <!-- 窄屏时右上角显示 -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -62,9 +69,13 @@
       <!-- /.navbar-collapse --> </div>
     <!-- /.container-fluid --> </nav>
   <!-- 导航END -->
+	<!-- /头部 -->
+	
+	<!-- 主体 -->
+	
   <!-- 背景图START -->
   <div id="Layer1" style="position:absolute; width:100%; height:100%; z-index:-1">
-    <img src="/s/Public/Home/images/bg3.jpg" height="100%" width="100%"/>
+    <img src="/story1314/Public/Home/images/bg3.jpg" height="100%" width="100%"/>
   </div>
   <!-- 背景图END -->
   <br>
@@ -88,13 +99,13 @@
           <div class="tab-pane fade in active" id="login">
             <form role="form">
             <div class="row">
-              <div class="form-group"> <input type="email" class="form-control" id="" placeholder="邮箱"></div>
+              <div class="form-group"> <input name="email" type="email" class="form-control" id="" placeholder="邮箱"></div>
 
-              <div class="form-group"><input type="password" class="form-control" id="" placeholder="密码"></div>
+              <div class="form-group"><input name="password" type="password" class="form-control" id="" placeholder="密码"></div>
 
               <div class="form-group">
-                <div class="col-md-8 clearpaddingleft"><input type="text" class="form-control" id="" placeholder="验证码"></div>
-                <div class="col-md-4"><img src="<?php echo U(MODULE_NAME.'/Public/verify',array('useNoise'=>'true','useCurve'=>'true'));?>" class=" " alt="验证码图片"></div>
+                <div class="col-md-8 clearpaddingleft"><input name="code" type="text" class="form-control" id="" placeholder="验证码"></div>
+                <div class="col-md-4"><a onclick="refresh-logincode()" href=""><img id="code-login" src="<?php echo U(MODULE_NAME.'/Public/verify',array('useNoise'=>'true','useCurve'=>'true'),'');?>" class=" " alt="验证码图片"></a></div>
               </div> 
             </div>
               <div class="row">
@@ -103,15 +114,15 @@
             </form>
           </div>
           <div class="tab-pane fade" id="register">
-            <form role="form" method="post" action="<?php echo U(MODULE_NAME.'/User/register');?>">
+            <form role="form" method="post" action="<?php echo U(MODULE_NAME.'/User/doRegister');?>">
             <div class="row">
-              <div class="form-group"> <input type="email" class="form-control" id="" placeholder="邮箱"></div>
+              <div class="form-group"> <input name="eamil" type="email" class="form-control" id="" placeholder="邮箱"></div>
 
-              <div class="form-group"><input type="password" class="form-control" id="" placeholder="密码"></div>
+              <div class="form-group"><input name="password" type="password" class="form-control" id="" placeholder="密码"></div>
 
               <div class="form-group">
-                <div class="col-md-8 clearpaddingleft"><input type="text" class="form-control" id="" placeholder="验证码"></div>
-                <div class="col-md-4"><img src="/s/Public/Home/images/bg2.jpg" class="verifycodeimg" alt="验证码图片"></div>
+                <div class="col-md-8 clearpaddingleft"><input name="code" type="text" class="form-control" id="" placeholder="验证码"></div>
+                <div class="col-md-4"><a onclick="refresh-registercode()" href=""><img id="code-register" src="<?php echo U(MODULE_NAME.'/Public/verify',array('useNoise'=>'true','useCurve'=>'true'),'');?>" class=" " alt="验证码图片"></a></div>
               </div> 
             </div>
               <div class="row">
@@ -123,5 +134,11 @@
       </div>
     </div>
   </div>
+
+	<!-- /主体 -->
+
+	<!-- 底部 -->
+	<!--  -->
+	<!-- /底部 --> 
 </body>
 </html>

@@ -1,0 +1,15 @@
+[ 2014-10-12T08:07:23+08:00 ] 127.0.0.1 /story1314/index.php/Home/User/doRegister.html
+ERR: Think\Controller:authcode方法不存在！
+
+[ 2014-10-12T08:08:54+08:00 ] 127.0.0.1 /story1314/index.php/Home/User/doRegister.html
+ERR: 验证码错误
+
+[ 2014-10-12T08:09:16+08:00 ] 127.0.0.1 /story1314/index.php/Home/User/doRegister.html
+ERR: 验证码错误
+
+[ 2014-10-12T08:11:13+08:00 ] 127.0.0.1 /story1314/index.php/Home/User/doRegister.html
+ERR: Think\Controller:authcode方法不存在！
+
+[ 2014-10-12T08:30:29+08:00 ] 127.0.0.1 /story1314/index.php/Home/User/doRegister.html
+ERR: 非法数据对象！:[email=>]
+

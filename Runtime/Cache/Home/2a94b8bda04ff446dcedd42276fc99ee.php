@@ -3,15 +3,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>首页</title>
-	<link href="/s/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet"> 
-	<script type="text/javascript" src="/s/Public/static/jquery-1.9.1.min.js"></script>
-	<script src="/s/Public/Bootstrap/static/bootstrap.min.js"></script>
+	<link href="/story1314/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet"> 
+	<script type="text/javascript" src="/story1314/Public/static/jquery-1.9.1.min.js"></script>
+	<script src="/story1314/Public/Bootstrap/static/bootstrap.min.js"></script>
  
 </head>
 <body>
 <!-- 导航START -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
-  <div class="container-fluid">
+  <div class="container">
     <!-- 窄屏时右上角显示 -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
