@@ -2,9 +2,12 @@
 .border{
 	border:1px solid red;
 }
+.rborder{border:1px solid red;}
+.bborder{border:1px solid blue;}
+.yborder{border:1px solid yellow;}
 
+/*TESTING CODE ==END==*/
 
-/*TESTING CODE*/
 /*验证码图片*/
 .verifycodeimg{
 	width: 110px;

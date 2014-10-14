@@ -54,8 +54,14 @@ class UserController extends Controller{
 		session('logintime',date('Y-m-d H:i:s',$checkAll['logintime']));
 		session('loginip',$checkAll['loginip']);
         
-        redirect(__MODULE__); 
-		// echo "<script> location.href='".$_SERVER["HTTP_REFERER"]."';</script>";
+        redirect(__MODULE__);  
+	}
+
+	// 退出登录
+	public function logout(){ 
+		session_unset();    // frees all session variables
+		session_destroy();  // destroys all of the data associated with the current session
+		echo "<script> location.href='".$_SERVER['HTTP_REFERER']."';</script>";  // 跳转回一页
 	}
 }
 
