@@ -8,7 +8,15 @@
   <script src="/story1314/Public/static/refreshcode.js"></script>
   <script>
   var URL = <?php echo U(MODULE_NAME.'/Public/verify','','');?>;
+  $(function(){
+
+  });
   </script>
+  <style>
+  #content{
+  	height: 200px;
+  }
+  </style>
   
 	<link href="/story1314/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="/story1314/Public/Home/css/style.css" rel="stylesheet">
@@ -106,67 +114,14 @@
 	
 	<!-- 主体 -->
 	
-  <!-- 背景图START -->
-  <div id="Layer1" style="position:absolute; width:100%; height:100%; z-index:-1">
-    <img src="/story1314/Public/Home/images/bg3.jpg" height="100%" width="100%"/>
-  </div>
-  <!-- 背景图END -->
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4 border">
-      <div class="row">
-        <ul id="myTab"  role="tablist" class="nav nav-tabs nav-justified">
-          <li role="presentation" class="active" style="margin-left:0;">
-            <a href="#login" data-toggle="tab">登录</a>
-          </li>
-          <li role="presentation">
-            <a href="#register" data-toggle="tab">注册</a>
-          </li> 
-        </ul>
-      </div>
-        <div id="myTabContent" class="tab-content">
-          <div class="tab-pane fade in active" id="login">
-            <form role="form" action="<?php echo U(MODULE_NAME.'/User/doLogin');?>">
-            <div class="row">
-              <div class="form-group"> <input name="email" type="email" class="form-control" id="" placeholder="邮箱"></div>
-
-              <div class="form-group"><input name="password" type="password" class="form-control" id="" placeholder="密码"></div>
-
-              <div class="form-group">
-                <div class="col-md-8 clearpaddingleft"><input name="code" type="text" class="form-control" id="" placeholder="验证码"></div>
-                <div class="col-md-4"><a onclick="refresh-logincode()" href=""><img id="code-login" src="<?php echo U(MODULE_NAME.'/Public/verify',array('useNoise'=>'true','useCurve'=>'true'),'');?>" class=" " alt="验证码图片"></a></div>
-              </div> 
-            </div>
-              <div class="row">
-              <div class="form-group"><button type="submit" class="btn btn-info  btn-block">登录</button></div>
-              </div>
-            </form>
-          </div>
-          <div class="tab-pane fade" id="register">
-            <form role="form" method="post" action="<?php echo U(MODULE_NAME.'/User/doRegister');?>">
-            <div class="row">
-              <div class="form-group"> <input name="email" type="email" class="form-control" id="" placeholder="邮箱"></div>
-
-              <div class="form-group"><input name="password" type="password" class="form-control" id="" placeholder="密码"></div>
-
-              <div class="form-group">
-                <div class="col-md-8 clearpaddingleft"><input name="code" type="text" class="form-control" id="" placeholder="验证码"></div>
-                <div class="col-md-4"><a onclick="refresh-registercode()" href=""><img id="code-register" src="<?php echo U(MODULE_NAME.'/Public/verify',array('useNoise'=>'true','useCurve'=>'true'),'');?>" class=" " alt="验证码图片"></a></div>
-              </div> 
-            </div>
-              <div class="row">
-              <div class="form-group"><button type="submit" class="btn btn-info  btn-block">注册</button></div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="container"> 
+     <div class="row redborder" id="content">
+        <div class="col-md-3 blueborder"></div>
+        <div class="col-md-3 blueborder"></div>
+        <div class="col-md-3 blueborder"></div>
+        <div class="col-md-3 blueborder"></div>
+     </div>
+ </div>
 
 	<!-- /主体 -->
 

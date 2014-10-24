@@ -1,0 +1,28 @@
+<extend name="Common/base" />
+  <block name="head">
+  <title>首页</title>
+  <script src="__PUBLIC__/static/refreshcode.js"></script>
+  <script>
+  var URL = {:U(MODULE_NAME.'/Public/verify','','')};
+  $(function(){
+
+  });
+  </script>
+  <style>
+  #content{
+  	height: 200px;
+  }
+  </style>
+  </block> 
+ 
+ 
+ <block name="body">
+  <div class="container"> 
+     <div class="row redborder" id="content">
+        <div class="col-md-3 blueborder"></div>
+        <div class="col-md-3 blueborder"></div>
+        <div class="col-md-3 blueborder"></div>
+        <div class="col-md-3 blueborder"></div>
+     </div>
+ </div>
+</block>

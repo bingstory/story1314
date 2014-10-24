@@ -2,9 +2,10 @@
 .border{
 	border:1px solid red;
 }
-.rborder{border:1px solid red;}
-.bborder{border:1px solid blue;}
-.yborder{border:1px solid yellow;}
+.redborder{border:1px solid red;}
+.blueborder{border:1px solid blue;}
+.yellowborder{border:1px solid yellow;}
+.grayborder{border:1px solid gray;}
 
 /*TESTING CODE ==END==*/
 

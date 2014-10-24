@@ -16,6 +16,10 @@
     <script src="/story1314/Public/static/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body> 
+    <!-- 用来解决头部固定所带来的问题 -->
+    <div class="container"><div class="row" style="height:52px;"></div></div>
+    <!-- ==END== -->
+    
     <!-- 头部 -->
 	 <!-- 导航START --> 
  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
@@ -35,7 +39,7 @@
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <ul class="nav navbar-nav">
          <li class="active">
-           <a href="#">首页</a>
+           <a href="/story1314/index.php/Home">首页</a>
          </li>
          <li>
            <a href="#">家人</a>
@@ -103,7 +107,7 @@
 	<!-- 主体 -->
 	
   <div class="container">
-     <div class="row" style="height:52px;"></div>
+     
      <div class="row">
      <!-- 第一列 -->
        <div class="col-md-3 border">
